@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: aliceblue;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    color: rgb(218, 236, 216);
+    padding: 10px;
+}
+
+header img {
+    width: 140px;
+    margin: 0px 15px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+nav {
+    color: blanchedalmond;
+    text-align: center;
+    grid-area: menú;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0px; 
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav li a {
+    color: rgb(255, 212, 196);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav li a:hover {
+    background-color: rgb(0, 140, 255);
+    animation: 0.5s infinite boton-menu;
+}
+
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.2);}
+    100% { transform: scaleX(1.0);}
+}
+
+footer {
+    background-color: rgb(218, 243, 243);
+}

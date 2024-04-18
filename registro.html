@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>El Jedi Rebelde</title>
+  </head>
+  <body>
+    <header>
+      <a id="arriba"><img src="img/logo.jpg" alt="logo" /></a>
+      <h1>El Jedi Rebelde</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre mí.html">Sobre mí</a></li>
+          <li><a href="orden.html">Cronología</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="registro.html">Registro</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Registrate!</h2>
+        <form action="" method="">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nom">Nombre: *</label>
+            <input type="text" name="nom" id="nom" maxlength="30" required><br>
+            <label for="ape">Apellido: *</label>
+            <input type="text" name="ape" id="ape" maxlength="30" required><br>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="100">
+            <br><br>
+            <label for="fecnac">Fecha de nacimiento:</label>
+            <input type="date" name="fecnac" id="fecnac">
+            <label for="residencia">Lugar de residencia</label>
+            <select name="residencia" id="">residencia
+                <option value="1">C.A.B.A</option>
+                <option value="2">Gran Buenos Aires</option>
+                <option value="3">Interior del país</option>
+            </select>
+            <p>*Campos obligatorios</p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Datos de contacto e intereses</legend>
+            <label for="correo">E-mail: *</label>
+            <input type="email" name="correo" id="correo" placeholder="Obi-Wan@example.com" required><br>
+            <label for="tel">Celular: *</label>
+            <input type="number" name="tel" id="tel" required>
+            <br>
+            <label for="intereses">Tengo interés en:</label>
+            <input type="checkbox" name="intereses" value="1"> Películas
+            <input type="checkbox" name="intereses" value="2"> Series
+            <input type="checkbox" name="intereses" value="3"> Videojugos
+            <input type="checkbox" name="intereses" value="4"> Novelas canón
+            <br>
+            <label for="rb">¿Qué era te atrapa más?</label>
+            <input type="radio" name="rb" value="1">Período de la Antigua República
+            <input type="radio" name="rb" value="2">Era del surgimiento del Imperio
+            <input type="radio" name="rb" value="3">Era de la Rebelión
+            <input type="radio" name="rb" value="4">Era de la Nueva República
+            <br>
+            <p>*Campos obligatorios</p>
+          </fieldset>
+          <input type="checkbox" name="condiciones" id="condiciones"> Quiero recibir noticias y memes relacionadas al mundo de Star Wars
+          <br><br>
+          <input type="submit" value="Enviar datos">
+          <input type="reset" value="Borrar datos">
+        </form>
+      </section>
+    </main>
+    <br><br><br>
+    <footer>
+      <a href="mailto:jedirebelde@gmail.com" target="_blank"
+        ><img src="img/sobre.png" alt="logo email"
+      /></a>
+      <a href="https://www.facebook.com" target="_blank"
+        ><img src="img/face.png" alt="logo face"
+      /></a>
+      <a href="https://www.instagram.com" target="_blank"
+        ><img src="img/insta.png" alt="logo insta"
+      /></a>
+      <a href="https://www.twitter.com" target="_blank"
+        ><img src="img/x.png" alt="logo X"
+      /></a>
+      <br />
+      <a href="#arriba">⬆️</a>
+    </footer>
+  </body>
+</html>
